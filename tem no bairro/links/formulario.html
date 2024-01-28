@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/formulario.css"/>
+  
+  
+  <title>Cadastro</title>
+  
+</head>
+<body>
+  
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Faça seu Cadastro</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome Completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+        </fieldset>
+
+            <!-- Nome social -->
+            <div class="campo">
+                <label for="nome-social"><strong>Nome Social</strong></label>
+                <input type="text" name="nome-social" id="nome-social">
+            </div>
+
+        <!-- Campo de email -->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Sexo -->
+        <div class="campo">
+            <label><strong>Sexo?</strong></label>
+            <label>
+                <input type="radio" name="sexo" value="feminino" checked>Feminino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="masculino">Masculino
+            </label>
+        </div>
+
+        <!-- Data de nascimento -->
+        <div class="campo">
+            <label for="data-nascimento"><strong>Data de Nascimento</strong></label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </div>
+
+        <!-- Endereço -->
+        <div class="campo">
+            <label for="endereco"><strong>Endereço</strong></label>
+            <input type="text" id="endereco" name="endereco" required>
+        </div>
+
+        <!-- Telefone para contato -->
+        <div class="campo">
+            <label for="telefone"><strong>Celular</strong></label>
+            <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        </div>
+
+        <!-- Botão para avançar a página para finalizar cadastro-->
+        <a href="../links/Senha.html">
+            <button type="button" class="botao">Avançar</button>
+        </a>
+
+    </form>
+
+    <!-- RODAPE -->
+    <footer>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+</body>
+
+</html>
+
