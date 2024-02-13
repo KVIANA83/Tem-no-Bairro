@@ -1,2 +1,134 @@
+/* Estilo Geral está na pasta css nomeado como reset.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1; 
+}
+
+/* Estilo do Menu */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  height: 60px; 
+  background-color: #bfacac;
+  padding: 0 20px; /* Espaçamento interno do menu */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do menu */
+}
+
+.menu ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #000;
+}
+
+.menu li:hover {
+  background-color: #ea5b5b;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Caixa de login e imagem */
+
+.login {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-left: 20px; /* Ajusta a margem esquerda para menor distância entre a caixa de login e o menu */
+  border: 1px solid transparent; 
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 15px 2px #ea5b5b30;
+}
+
+.logotipo {
+  margin-left: 20px; /* Adiciona espaço entre a caixa de login e a imagem */
+}
+
+/* Caixa de login */
+.login {
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-left: 50px;
+  border: 1px solid transparent; 
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 15px 2px #ea5b5b30;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.login label {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.login input {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+  width: 220px;
+  padding: 5px;
+}
+
+.botao {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid #ea5b5b;
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 18px;
+  padding: 8px 4%;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #ea5b5b;
+  border: 1px solid transparent;
+}
 
 
