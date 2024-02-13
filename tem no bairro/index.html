@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/formulario.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/reset.css"/>
   
   <title>Tem no Bairro</title>
-  
 </head>
 <body>
-
-    <div class="login-form">
-        <h1 id="titulo">Seja bem-vindo!</h1>
-      <img src="./images/logotipo.png" width="350px">
-        <form action="#" method="post">
-
-            <div class="campo">
-                <label for="username"><strong>LOGIN:</strong></label>
-                <input type="text" id="username" name="username" placeholder="digite seu email" required>
-            </div>
-
-            <div class="campo">
-                <label for="password"><strong>SENHA:</strong></label>
-                <input type="password" id="password" name="password" required>
-            </div>
-
-            <div class="campo">
-                <a href="./links/recuperacao.html">Esqueceu a Senha?</a>
-            </div>
-
-          <a href="../links/feed.html">
-            <button class="botao" type="submit">Entrar</button>
-          </a>
-        </form>
-
-        <div class="register-link">
-            <p>Ainda não tem uma conta? <a href="./links/formulario.html">Cadastrar</a></p>
-        </div>
-    </div>
-
+  <div class="container">
+    
+    <!-- Topo do site -->
+    <div class="menu">
+      <ul>
+        <li><a href="./links/feed.html">Home</a></li>
+        <li><a href="./links/sobre.html">Sobre</a></li>
+        <li><a href="./links/contato.html">Contato</a></li>
+      </ul>
+    </div> <!-- Fim div menu -->
+      
+    <!-- Campo de login e senha -->
+    <div class="login">
+      <!-- Login -->
+      <div class="campo">
+        <label for="username">LOGIN: </label>
+        <input type="text" id="username" name="username" placeholder="digite seu e-mail..." required>
+      </div>
+        
+      <!-- Senha -->
+      <div class="campo">
+        <label for="password">SENHA: </label>
+        <input type="password" id="password" name="password" required>
+      </div>
+        
+      <div class="botão">
+        <!-- Campos para recuperação de senha, realizar cadastro e botão para logar -->
+        <a href="./links/feed.html">
+          <button class="btn" type="submit">ENTRAR</button>
+        </a>
+          
+        <a href="./links/recuperacao.html">
+          Esqueceu a senha?
+        </a>
+          
+        <a href="./links/formulario.html">
+          <button class="btn" type="submit">CADASTRAR</button>
+        </a>
+      </div> <!-- Fim div botão -->
+    </div> <!-- Fim div login -->
+    
+    <!-- Logotipo -->
+    <div class="logotipo">
+      <img src="./images/logotipo.png" alt="Tem no Bairro" width="300px">
+    </div> <!-- Fim div logotipo -->
+   
+  </div> <!-- Fim div container -->
+  
+  <!-- Rodapé -->
+  <footer>
+    <div class="rodape"></div>
+  </footer>
 </body>
 </html>
