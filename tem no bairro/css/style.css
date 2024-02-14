@@ -1,5 +1,4 @@
 /* Estilo Geral está na pasta css nomeado como reset.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,8 @@
 body {
   display: flex;
   flex-direction: column; 
-  min-height: 100vh;
+  height: 100vh;
+  width: 1280px;
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center; 
-  height: 60px; 
+  height: 60px;
   background-color: #bfacac;
   padding: 0 20px; /* Espaçamento interno do menu */
   margin-bottom: 20px; /* Adiciona espaço abaixo do menu */
@@ -49,7 +49,9 @@ body {
 }
 
 .menu li:hover {
-  background-color: #ea5b5b;
+  background-color: #f1f1f1;
+  border: none;
+  box-shadow: 1px 1px 5px 1px #ea5b5b70;
   padding: 5px;
   border-radius: 3px;
 }
@@ -57,7 +59,7 @@ body {
 /* Caixa de login e imagem */
 
 .login {
-  margin-top: 100px;
+  margin-top: 150px;
   align-items: center;
   justify-content: center;
   width: 350px;
@@ -70,7 +72,8 @@ body {
 }
 
 .logotipo {
-  margin-left: 20px; /* Adiciona espaço entre a caixa de login e a imagem */
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 /* Caixa de login */
@@ -79,7 +82,7 @@ body {
   justify-content: center;
   width: 350px;
   height: 350px;
-  margin-left: 50px;
+  margin-left: 30px;
   border: 1px solid transparent; 
   border-radius: 10px;
   background-color: #fff;
@@ -130,5 +133,3 @@ body {
   background-color: #ea5b5b;
   border: 1px solid transparent;
 }
-
-
