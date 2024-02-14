@@ -11,10 +11,19 @@ body {
   background-color: #f1f1f1;
 }
 
+.topo {
+  width: 100%;
+  max-width: 1280px;
+  height: 60px; 
+  background-color: #bfacac;
+  padding: 20px; /* Espaçamento interno do menu */
+  margin-bottom: 2em; /* Use unidades de medida relativas */
+}
+
+
 /* Rodapé */
 footer {
   background-color: #bfacac;
-  color: #fff;
   padding: 30px;
   clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
 }
