@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/formulario.css"/>
-  
+  <link rel="stylesheet" href="../css/recuperacao.css"/>
+  <link rel="stylesheet" href="../css/reset.css"/>
   
   <title>Recuperar Senha</title>
   
 </head>
 <body>
+  
+  <div class="topo"></div>
 
-    <div class="recovery-form">
-        <h2>Recuperação de Senha</h2>
-        <form action="#" method="post">
-
+    <div class="container">
+         <form action="#" method="post">
+           
+           <h1 class="titulo">Recuperação de Senha</h2>
+       
             <div class="campo">
-                <label><strong>Escolha como receber o link de recuperação:</strong></label>
+                <label>Escolha como receber o link de recuperação:</label>
                 <label>
                     <input type="radio" name="recoveryOption" value="email" checked>E-mail
                 </label>
@@ -28,13 +30,23 @@
             </div>
 
             <div class="campo">
-                <label for="emailOrPhone"><strong>E-mail ou Celular:</strong></label>
+                <label for="emailOrPhone"><strong>Digite seus dados:</strong></label>
                 <input type="text" id="emailOrPhone" name="emailOrPhone" required>
             </div>
 
-            <button class="botao" type="submit">Enviar</button>
+           <a href="#">
+             <button class="btn" type="submit">Voltar</button>
+           </a>
+           <a href="#">
+             <button class="btn" type="submit">Enviar</button>
+           </a>
         </form>
     </div>
+  
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="rodape"></div>
+  </footer>
 
 </body>
 </html>
