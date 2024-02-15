@@ -15,8 +15,8 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
-  flex: 1; 
+  flex-direction: column;
+  flex: 1;
 }
 
 /* Estilo do Menu */
@@ -26,7 +26,7 @@ body {
   align-items: center; 
   height: 60px;
   background-color: #bfacac;
-  padding: 0 20px; /* Espaçamento interno do menu */
+  padding: 20px; /* Espaçamento interno do menu */
   margin-bottom: 20px; /* Adiciona espaço abaixo do menu */
 }
 
@@ -57,32 +57,22 @@ body {
 }
 
 /* Caixa de login e imagem */
-
-.login {
-  margin-top: 150px;
-  align-items: center;
-  justify-content: center;
-  width: 350px;
-  height: 350px;
-  margin-left: 20px; /* Ajusta a margem esquerda para menor distância entre a caixa de login e o menu */
-  border: 1px solid transparent; 
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 2px 2px 15px 2px #ea5b5b30;
-}
-
 .logotipo {
-  margin-left: 50px;
-  margin-top: 50px;
+  position: absolute;
+  top: 30%;
+  left: 250%;
+  transform: translate(-50%, -50%);
 }
 
-/* Caixa de login */
 .login {
+  position: absolute;
+  top: 60%;
+  left: 100%;
+  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   width: 350px;
   height: 350px;
-  margin-left: 30px;
   border: 1px solid transparent; 
   border-radius: 10px;
   background-color: #fff;
@@ -111,9 +101,11 @@ body {
   padding: 5px;
 }
 
+/* Comandos de controle  */
 .botao {
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
+  flex: 1;
   align-items: center;
 }
 
@@ -132,4 +124,9 @@ body {
   color: #fff;
   background-color: #ea5b5b;
   border: 1px solid transparent;
+}
+
+.senha {
+  margin-top: 10px;
+  font-size: 12px;
 }
