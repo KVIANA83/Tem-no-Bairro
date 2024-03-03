@@ -1,0 +1,56 @@
+body{
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do formulário */
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 2px #ea5b5b30;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+input[type="text"],
+textarea {
+  background-color: #f1f1f1;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+}
+
+.btn-enviar button{
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ea5b5b;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-enviar button:hover{
+  background-color: #ea5b5b;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+/* Ajuste o espaçamento do rodapé para não sobrepor o conteúdo */
+footer {
+  margin-top: 2em;
+}
