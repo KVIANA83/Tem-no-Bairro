@@ -1,17 +1,17 @@
-body{
-  height: 100vh;
+body {
   align-items: center;
   justify-content: center;
 }
 
 /* Estilo do formulário */
 section {
+  display: block;
+  width: 70%;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px 2px #ea5b5b30;
-  align-items: center;
-  justify-content: center;
+  margin: 20px auto;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 input[type="text"],
@@ -34,7 +34,7 @@ textarea {
   border-radius: 5px;
 }
 
-.btn-enviar button{
+.btn-enviar button {
   padding: 15px;
   background-color: #f1f1f1;
   border: 1px solid #ea5b5b;
@@ -44,7 +44,7 @@ textarea {
   cursor: pointer;
 }
 
-.btn-enviar button:hover{
+.btn-enviar button:hover {
   background-color: #ea5b5b;
   border: 1px solid transparent;
   color: #fff;
