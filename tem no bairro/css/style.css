@@ -7,27 +7,25 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column; 
-  height: 100vh;
-  width: 1280px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  display: block;
 }
 
 /* Estilo do Menu */
-.menu {
+#header {
+  width: 100%;
+  height: 3.5rem;
   display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-  height: 60px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
   background-color: #bfacac;
-  padding: 20px; /* Espaçamento interno do menu */
-  margin-bottom: 20px; /* Adiciona espaço abaixo do menu */
+
+}
+
+#logo img {
+  width: 80px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .menu ul {
@@ -39,41 +37,57 @@ body {
 .menu li {
   margin-right: 20px;
   cursor: pointer;
-  transition: transform 0.2s ease; 
 }
 
 .menu a {
   text-decoration: none;
   font-weight: 800;
   color: #000;
+  padding: 5px;
 }
 
 .menu li:hover {
   background-color: #f1f1f1;
   border: none;
-  box-shadow: 1px 1px 5px 1px #ea5b5b70;
-  padding: 5px;
   border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px #ea5b5b70;
+  transition: .4s;
+}
+
+.menu a.active {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px #ea5b5b70;
 }
 
 /* Caixa de login e imagem */
-.logotipo {
-  position: absolute;
-  top: 30%;
-  left: 250%;
-  transform: translate(-50%, -50%);
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.container main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container aside>img {
+  width: 450px;
+  margin: 0 auto;
 }
 
 .login {
-  position: absolute;
-  top: 60%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 350px;
   height: 350px;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 2px 2px 15px 2px #ea5b5b30;
@@ -102,14 +116,14 @@ body {
 }
 
 /* Comandos de controle  */
-.botao {
+.box-btn {
   display: flex;
   flex-direction: column;
-  flex: 1;
   align-items: center;
+  justify-content: center;
 }
 
-.btn {
+#btn-login {
   border: 1px solid #ea5b5b;
   color: #000;
   background-color: #f1f1f1;
@@ -120,10 +134,29 @@ body {
   font-size: 12px;
 }
 
-.btn:hover {
+#btn-login:hover {
   color: #fff;
   background-color: #ea5b5b;
   border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#btn-cadastrar {
+  border: 1px solid #ea5b5b;
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 18px;
+  padding: 8px 4%;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+#btn-cadastrar:hover {
+  color: #fff;
+  background-color: #ea5b5b;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .senha {
