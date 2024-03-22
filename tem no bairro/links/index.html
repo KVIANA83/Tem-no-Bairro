@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+
+  <title>Tem no Bairro</title>
+</head>
+
+<body>
+
+  <!-- Topo do site -->
+  <header id="header">
+    <a href="../links/index.html" id="logo">
+      <img src="../images/logotipo.png" alt="Tem no Bairro">
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="../links/feed.html" class="active">Home</a></li>
+        <li><a href="../links/sobre.html">Sobre</a></li>
+        <li><a href="../links/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header> <!-- Fim div menu -->
+
+  <!-- Logotipo -->
+
+  <div class="container">
+    <main class="main">
+      <!-- Campo de login e senha -->
+      <div class="login">
+        <!-- Login -->
+        <div class="campo">
+          <label for="username">LOGIN: </label>
+          <input type="text" id="username" name="username" placeholder="digite seu e-mail..." required>
+        </div>
+
+        <!-- Senha -->
+        <div class="campo">
+          <label for="password">SENHA: </label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="box-btn">
+          <!-- Campos para recuperação de senha, realizar cadastro e botão para logar -->
+          <a href="../links/feed.html">
+            <button id="btn-login" type="submit">ENTRAR</button>
+          </a>
+
+          <a href="../links/recuperacao.html" class="senha">
+            Esqueceu a senha?
+          </a>
+
+          <a href="../links/formulario.html">
+            <button id="btn-cadastrar" type="submit">CADASTRAR</button>
+          </a>
+        </div> <!-- Fim div botão -->
+      </div> <!-- Fim div login -->
+    </main>
+
+    <aside>
+      <img src="../images/logotipo.png" alt="imagem da logo tem no bairro" srcset="">
+    </aside>
+  </div> <!-- Fim div container -->
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="rodape"></div>
+  </footer>
+</body>
+
+</html>
