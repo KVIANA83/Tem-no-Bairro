@@ -1,0 +1,165 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ################## Estilo Geral ################## */
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+footer {
+  background-color: #bfacac;
+  padding: 40px;
+  clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
+}
+
+header {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 10px;
+  background-color: #bfacac;
+  height: 60px;
+}
+
+#logo {
+  margin-left: 0;
+  flex-grow: 1;
+}
+
+input[type="text"] {
+  display: flex;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-right: 30%;
+}
+
+/*
+header .barra-pesquisa {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  justify-content: center;
+  margin-left: 100px;
+} 
+*/
+
+/* Estilo do menu lateral */
+
+.sidebar {
+  position: fixed; 
+  top: 20px;
+  left: 10px;
+  width: 170px;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+}
+
+.sidebar ul li:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #ea5b5b;
+  border-radius: 10px;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.ativo {
+  display: block;
+}
+
+.submenu ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu ul li {
+  padding: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.submenu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Estilo do menu categoria */
+
+.categoria {
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 700px;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icons {
+  width: calc(20% - 10px);
+  text-align: center;
+  margin: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.icons a img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.icons p {
+  font-size: 14px;
+}
+
+.icons:hover {
+  box-shadow: 3px 3px 5px 3px #ea5b4b50;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ea5b5b;
+  transform: translateY(-5px);
+}
