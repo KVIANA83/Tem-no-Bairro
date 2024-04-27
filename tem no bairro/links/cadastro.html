@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/style.css"/>
+  
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <title>Formulário de Cadastro</title>
+</head>
+<body>
+  
+  <!-- TOPO -->
+  <header>
+    <!-- MENU -->
+     <nav class="menu">
+       <ul>
+         <li><a href="../links/index.html">Home</a></li>
+         <li><a href="../links/login.html">Entrar</a></li>
+         <li><a href="../links/sobre.html">Sobre</a></li>
+         <li><a href="../links/cadastro.html">Cadastro</a></li>
+         <li><a href="../links/contato.html">Contato</a></li>
+       </ul>
+     </nav> <!-- Fim MENU -->
+      
+     <!-- MENU MOBILE -->
+    
+    <div class="btn-abrir-menu" id="btn-menu">
+      <i class="bi bi-list"></i>
+    </div> <!-- Fim div btn-abrir-menu -->
+    
+    <div class="menu-mobile" id="menu-mobile">
+      <div class="btn-fechar">
+        <i class="bi bi-x-lg"></i>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="../links/index.html">Home</a></li>
+          <li><a href="../links/login.html">Entrar</a></li>
+          <li><a href="../links/sobre.html">Sobre</a></li>
+          <li><a href="../links/cadastro.html">Cadastro</a></li>
+          <li><a href="../links/contato.html">Contato</a></li>    
+        </ul>
+      </nav>
+    </div> <!-- Fim div menu-mobile -->
+    
+    <div class="overlay-menu" id="overlay-menu"></div>
+  </header>
+  
+  <main>
+    <section class="formulario-cadastro">
+      <div class="flex">
+        <div class="cadastro-form">
+          <form action="#" method="post">
+            <!-- Título -->
+            <h2 class="subtitulo">Cadastro</h2>
+            <!-- Preencher os campos para realizar cadastro -->
+            <div class="form-cadastro">
+              <label for="nome-completo">Nome Completo:</label>
+              <input type="text" name="nome-completo" id="nome-completo" required>
+            </div>
+            <!-- Nome Social se tiver -->
+            <div class="form-cadastro">
+              <label for="nome-social">Nome Social:</label>
+              <input type="text" name="nome-social" id="nome-social">
+            </div>
+            <!-- Data de nascimento -->
+            <div class="form-cadastro">
+              <label for="dataNascimento">Data de Nascimento:</label>
+              <input type="date" name="dataNascimento" id="dataNascimento" required>
+            </div>
+            <!-- Endereço -->
+            <div class="form-cadastro">
+              <label for="endereco">Endereço:</label>
+              <input type="text" name="endereco" id="endereco" placeholder="Rua xxx, N°, bairro, cidade/UF, CEP" required>
+            </div>
+            <!-- E-mail -->
+            <div class="form-cadastro">
+              <label for="email">E-mail:</label>
+              <input type="text" name="email" id="email" placeholder="name@provedor.com" required>
+            </div>
+            <!-- Contato -->
+            <div class="form-cadastro">
+              <label for="celular">Celular:</label>
+              <input type="text" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <!-- Botões -->
+            <div class="form-cadastro">
+              <a href="#">
+                <button class="btn" type="submit">Salvar</button>
+              </a>
+              <a href="../links/senha.html">
+                <button class="btn" type="button">Avançar</button>
+              </a>
+            </div>
+                        
+          </form>
+        </div> <!-- Fim div form-cadastro -->
+        <!-- LOGOMARCA -->
+        <div class="logomarca">
+          <img src="../assets/logotipo.png" alt="tem no bairro" style="width: 200px">
+        </div> <!-- Fim div logomarca -->
+      </div> <!-- Fim div flex -->
+    </section>
+  </main>
+  
+  
+  <!-- RODAPE -->
+  <footer>
+    <div class="rodape"></div>
+  </footer>
+  <!-- JAVASCRIPT -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
