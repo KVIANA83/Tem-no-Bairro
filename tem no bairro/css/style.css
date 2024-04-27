@@ -1,165 +1,493 @@
-/* Estilo Geral está na pasta css nomeado como reset.css */
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ################## Estilo Geral ################## */
+
 * {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  display: block;
+  background-color: #f1f1f1;
+  height: 100vh;
 }
 
-/* Estilo do Menu */
-#header {
-  width: 100%;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
+footer {
   background-color: #bfacac;
-
+  padding: 40px;
+  clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
 }
 
-#logo img {
-  width: 80px;
+/* ################## Estilo Página 1 ################## */
+
+header {
   display: flex;
-  margin: 0 auto;
+  justify-content: center; 
+  padding: 10px;
+  background-color: #bfacac;
+}
+
+.menu {
+  height: 30px;
+  margin-top: 10px;
 }
 
 .menu ul {
   display: flex;
-  text-align: center;
   list-style: none;
 }
 
 .menu li {
-  margin-right: 20px;
-  cursor: pointer;
+  margin-right: 30px;
 }
 
 .menu a {
   text-decoration: none;
-  font-weight: 800;
   color: #000;
-  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 600;
 }
 
-.menu li:hover {
+.menu a:hover {
+  transform: scale(1.2);
   background-color: #f1f1f1;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px #ea5b5b70;
-  transition: .4s;
+  box-shadow: 3px 3px 3px 3px #ea5b5b50;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.menu a.active {
+.flex {
+  display: flex;
+}
+
+.logomarca {
+  margin-left: auto;
+}
+
+main {
+  height: 100vh;
+  max-width: 1280px;
+  padding: 20px;
+  margin: 10px;
+}
+
+main .texto {
+  padding: 20px;
+  flex: 1;
+}
+
+main .titulo {
+  font-size: 38px;
+  color: #000;
+  text-align: left;
+}
+
+main .subtitulo {
+  font-size: 24px;
+  color: #000;
+  margin-left: 3rem;
+}
+
+main button {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+main .btn-acesso {
+  padding: 10px 40px;
+  background-color: #ea5b5b;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+main .btn-acesso:hover {
   background-color: #f1f1f1;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px #ea5b5b70;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  box-shadow: 3px 3px 3px 3px #ea5b5b50;
 }
 
-/* Caixa de login e imagem */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+/* ################## Estilo Menu Mobile ################## */
 
+.btn-abrir-menu{
+    display: none;
 }
 
-.container main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+.btn-abrir-menu i{
+    color: #580664;
+    font-size: 40px;
 }
 
-.container aside>img {
-  width: 450px;
-  margin: 0 auto;
+.menu-mobile{
+    background-color: #bfacac;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.login {
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #000;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}   
+
+.menu-mobile nav ul li a:hover{
+    background-color: #f1fif1;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ################## Estilo Página 2 Login ################## */
+
+.login-form {
+  background-color: #fff;
   display: block;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 2px 2px 15px 2px #ea5b5b30;
+  align-items: center;
+  padding: 10px;
+  margin: 3rem;
 }
 
-.campo {
+form .form-group {
   display: flex;
   align-items: center;
-  margin: 10px 5px;
-  padding: 10px;
-}
-
-.login label {
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px;
-}
-
-.login input {
+  margin: 7px;
   color: #000;
-  background-color: #fff;
-  border: 1px solid #ea5b5b;
+  font-weight: 600;
+}
+
+form input {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
   border-radius: 5px;
-  width: 220px;
+  border: 1px solid #ea5b5b;
+  margin: 5px;
+  color: #000;
   padding: 5px;
 }
 
-/* Comandos de controle  */
-.box-btn {
+.form-group .btn {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1;
+  width: 100px;
+  align-items: center;
+  margin-left: 5rem;
+  margin-bottom: 10px;
+}
+
+.form-group .btn:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 30%;
+}
+
+/* ################## Estilo Página 3 Cadastro ################## */
+
+.formulario-cadastro {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-form {
+  width: 50%;
+  padding: 20px;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.form-cadastro {
+  margin-bottom: 20px;
+}
+
+.form-cadastro label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.form-cadastro input[type="text"]:focus,
+.form-cadastro input[type="date"]:focus {
+  outline: none;
+}
+
+.form-cadastro a {
+  text-decoration: none;
+}
+
+.form-cadastro button.btn {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  margin: 9px;
+}
+
+.form-cadastro button.btn:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+/* ################## Estilo Página 4 Senha ################## */
+
+.senha {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#btn-login {
+.password-form {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px 3px #ea5b5b30;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  padding: 10px;
+  margin: 4rem;
+}
+
+.password-form .subtitulo{
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+form .form-password {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-password input {
+  width: 170px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  margin: 5px;
+  color: #000;
+  padding: 5px;
+}
+
+.form-password .btn {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1;
+  align-items: center;
+  margin: 26px;
+}
+
+.form-password .btn:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+/* ################## Estilo Página 5 Reset de Senha ################## */
+
+.reset-senha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-reset-form {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px 3px #ea5b5b30;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  padding: 10px;
+  margin: 3rem;
+}
+
+.form-password-reset .subtitulo {
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.form-password-reset label {
+  font-size: 14px;
+  align-itens: center;
+  padding: 10px;
+  margin: 5px;
+  color: #000;
+}
+
+.form-password-reset input {
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  color: #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.form-password-reset a {
+  text-decoration: none;
+}
+
+.form-password-reset .btn {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1;
+  margin-left: 74px;
+}
+
+.form-password-reset .btn:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+/* ################## Estilo Página 6 Formulário de Contato ################## */
+
+.form-contato {
+  width: 50%; 
+  margin-right: 20px; 
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  border-radius: 10px;
+  margin: 3rem;
+}
+
+.form-contato h2 {
+  font-size: 24px;
+  color: #000;
+  margin: 20px;
+  margin-left: 150px;
+}
+
+.form-contato input[type="text"],
+.form-contato textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 76px;
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.form-contato textarea {
+  height: 150px;
   border: 1px solid #ea5b5b;
   color: #000;
   background-color: #f1f1f1;
-  border-radius: 18px;
-  padding: 8px 4%;
-  margin: 10px;
-  font-weight: 600;
-  font-size: 12px;
 }
 
-#btn-login:hover {
-  color: #fff;
-  background-color: #ea5b5b;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-#btn-cadastrar {
-  border: 1px solid #ea5b5b;
-  color: #000;
+.btn-enviar button {
+  padding: 10px 20px;
   background-color: #f1f1f1;
-  border-radius: 18px;
-  padding: 8px 4%;
-  margin: 10px;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-#btn-cadastrar:hover {
-  color: #fff;
-  background-color: #ea5b5b;
-  border: 1px solid transparent;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  margin-left: 170px;
 }
 
-.senha {
-  margin-top: 10px;
-  font-size: 12px;
+.btn-enviar button:hover {
+  background-color: #ea5b5b; 
+  color: #fff;
+  border: 1px solid transparent;
 }
