@@ -120,7 +120,7 @@ header .barra-pesquisa {
 
 .trocar-perfil {
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 100px;
   width: 600px;
   height: 100vh;
 }
@@ -169,4 +169,275 @@ header .barra-pesquisa {
   font-weight: 600;
   color: #ea5b5b;
   transform: translateY(-5px);
+}
+
+/* ################## Estilo Editar Perfil Cliente/Empreendedor ################## */
+
+.perfil-cliente {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: calc(100% - 250px);
+  height: 100vh;
+}
+
+.perfil-cliente .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.foto-perfil {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.foto {
+  border: 1px solid #ea5b5b;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.foto-perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.foto-perfil .editar-foto, .adicionar-foto {
+  margin-top: 10px;
+  margin-right: 7px;
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.foto-perfil .editar-foto:hover, .adicionar-foto:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  box-shadow: 3px 3px 3px 3px #ea5b5b50;
+}
+
+/*
+
+.dados-usuario {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.campo-privacidade {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+}
+
+.campo-privacidade label {
+  font-weight: 600;
+  margin: 10px;
+  text-align: justify;
+}
+
+.campo-privacidade input {
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.campo-privacidade select {
+  border: 1px solid #ea5b5b;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+
+*/
+
+.dados-usuario {
+  margin-left: 10px;
+}
+
+.dados-usuario h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.campo-privacidade {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.campo-privacidade label {
+  font-weight: 600;
+  display: block;
+  margin: 10px;
+  text-align: left;
+  height: 20px;
+  padding: 8px;
+  width: 200px;
+}
+
+.campo-privacidade input[type="nome"],
+.campo-privacidade input[type="text"],
+.campo-privacidade input[type="email"],
+.campo-privacidade input[type="date"],
+.campo-privacidade input[type="tel"], 
+.campo-privacidade input[type="endereco"],
+.campo-privacidade #categoria {
+  width: calc(100% - 100px);
+  padding: 8px; 
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.campo-privacidade select {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  margin: 10px;
+}
+
+.campo-privacidade-btn .btn {
+  margin-left: 42%;
+}
+
+.btn {
+  background-color: #ea5b5b;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  box-shadow: 3px 3px 3px 3px #ea5b5b50;
+}
+
+/* Estilo para o input type file */
+.foto-perfil input[type="file"] {
+  display: none;
+  
+}
+
+.foto-perfil label[for="imagem"] {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.foto-perfil label[for="imagem"]:hover {
+  background-color: #bfacac;
+  color: #fff;
+  border: none;
+}
+
+
+/* ################## Estilo Meu Catálogo ################## */
+
+/* Catálogo cliente */
+
+.catalogo-cliente {
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.catalogo-cliente .titulo {
+  margin-bottom: 12px;
+}
+
+.catalogo-cliente p {
+  font-size: 14px;
+}
+
+/* Catálogo Vendendor */
+
+main {
+  margin-left: 120px;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Estilo para o formulário de produto */
+.formulario-produto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  width: 600px;
+}
+
+.formulario-produto label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario-produto input[type="text"],
+.formulario-produto textarea,
+.formulario-produto input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ea5b5b;
+    border-radius: 10px;
+}
+
+/* Estilo para o input type file */
+.formulario-produto input[type="file"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.formulario-produto label[for="imagem"] {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.formulario-produto label[for="imagem"]:hover {
+  background-color: #bfacac;
+  color: #fff;
+  border: none;
 }
