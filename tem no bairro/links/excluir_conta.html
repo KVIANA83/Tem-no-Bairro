@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Conta</title>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/seguranca.css">
+</head>
+<body>
+    <!-- TOPO -->
+    <header>
+        <a href="../index.html" id="logo">
+            <img src="../assets/logotipo.png" id="logo" alt="Tem no Bairro" style="width: 70px">
+        </a>
+        <!-- Barra de pesquisa -->
+        <input class="barra-pesquisa" type="text" placeholder="Pesquisar...">
+    </header>
+
+    <!-- MENU LATERAL -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Perfil</a>
+                <ul class="submenu">
+                    <li><a href="../links/feed.html">Meu Perfil</a></li>
+                    <li><a href="../links/escolher_perfil.html">Trocar Perfil</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Meu Catálogo</a></li>
+            <li><a href="#">Notificações</a></li>
+            <li><a href="../links/sobre.html">Sobre</a></li>
+            <li><a href="#">Filtros</a>
+                <ul class="submenu">
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Lanchonetes</a></li>
+                    <li><a href="#">Bares</a></li>
+                    <li><a href="#">Feiras</a></li>
+                    <li><a href="#">Supermercados</a></li>
+                    <li><a href="#">Gráficas</a></li>
+                    <li><a href="#">Utilidades</a></li>
+                    <li><a href="#">Construções</a></li>
+                    <li><a href="#">Farmácias</a></li>
+                    <li><a href="#">Movelaria</a></li>
+                    <li><a href="#">Automotivo</a></li>
+                    <li><a href="#">Roupas</a></li>
+                    <li><a href="#">Calçados</a></li>
+                    <li><a href="#">Petshop</a></li>
+                    <li><a href="#">Beleza</a></li>
+                    <li><a href="#">Salão/Barbearia</a></li>
+                    <li><a href="#">Papelaria</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Outros</a></li>
+                </ul>
+            </li>
+            <li><a href="../links/contato.html">Contato</a></li>
+            <li><a href="#">Configurações</a>
+                <ul class="submenu">
+                    <li><a href="../links/politica_privacidade.html">Privacidade</a></li>
+                    <li><a href="../links/seguranca.html">Segurança</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="../links/idiomas.html">Mudar Idioma</a></li>
+                    <li><a href="../links/feedback.html">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="../links/index.html">Sair</a></li>
+        </ul>
+    </nav>
+    <!-- FIM MENU LATERAL -->
+
+    <main>
+        <section class="excluir-conta">
+            <!-- Título -->
+            <h2 class="subtitulo">Excluir Conta</h2>
+            <!-- Mensagem informativa -->
+            <p>Tem certeza de que deseja excluir sua conta? Esta ação é irreversível e todos os seus dados serão permanentemente removidos.</p>
+          
+            <form id="excluir-conta-form">
+                <!-- Usuário insere a senha para confirmar a exclusão de conta -->
+                <div class="conta-excluir">
+                    <label for="senha">Digite sua senha para confirmar:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+              
+                <!-- Botão para confirmar exclusão de conta -->
+                <button type="submit">Excluir</button>
+            </form>
+          
+            <!-- Mensagem para usuário após confirmar exclusão de conta -->
+            <div id="confirmation-message" class="confirmation-message" style="display:none;">
+                <p>Conta excluída com sucesso!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPE -->
+    <footer>
+        <div class="rodape"></div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
