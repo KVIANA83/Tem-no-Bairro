@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiomas</title>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- TOPO -->
+  <header>
+    <a href="../index.html" id="logo">
+      <img src="../assets/logotipo.png" id="logo" alt="Tem no Bairro" style="width: 70px">
+    </a>
+    <!-- Barra de pesquisa -->
+    <input class="barra-pesquisa" type="text" placeholder="Pesquisar...">
+  </header>
+  
+  <!-- MENU LATERAL -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Perfil</a>
+        <ul class="submenu">
+          <li><a href="../links/feed.html">Meu Perfil</a></li>
+          <li><a href="../links/escolher_perfil.html">Trocar Perfil</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Meu Catálogo</a></li>
+      <li><a href="#">Notificações</a></li>
+      <li><a href="../links/sobre.html">Sobre</a></li>
+      <li><a href="#">Filtros</a>
+        <ul class="submenu">
+          <li><a href="#">Restaurantes</a></li>
+          <li><a href="#">Lanchonetes</a></li>
+          <li><a href="#">Bares</a></li>
+          <li><a href="#">Feiras</a></li>
+          <li><a href="#">Supermercados</a></li>
+          <li><a href="#">Gráficas</a></li>
+          <li><a href="#">Utilidades</a></li>
+          <li><a href="#">Construções</a></li>
+          <li><a href="#">Farmácias</a></li>
+          <li><a href="#">Movelaria</a></li>
+          <li><a href="#">Automotivo</a></li>
+          <li><a href="#">Roupas</a></li>
+          <li><a href="#">Calçados</a></li>
+          <li><a href="#">Petshop</a></li>
+          <li><a href="#">Beleza</a></li>
+          <li><a href="#">Salão/Barbearia</a></li>
+          <li><a href="#">Papelaria</a></li>
+          <li><a href="#">Infantil</a></li>
+          <li><a href="#">Outros</a></li>
+        </ul>
+      </li>
+      <li><a href="../links/contato.html">Contato</a></li>
+      <li><a href="#">Configurações</a>
+        <ul class="submenu">
+          <li><a href="../links/politica_privacidade.html">Privacidade</a></li>
+          <li><a href="../links/seguranca.html">Segurança</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="../links/idiomas.html">Mudar Idioma</a></li>
+          <li><a href="../links/feedback.html">Feedback</a></li>
+        </ul>
+      </li>
+      <li><a href="../links/index.html">Sair</a></li>
+    </ul>
+  </nav>
+  <!-- FIM MENU LATERAL -->
+  
+  <main>
+    <section class="idiomas">
+      <div class="flex">
+        <!-- Titulo -->
+        <h2 class="subtitulo">Trocar Idioma</h2>
+        <!-- Usuário escolhe o idioma de sua preferência -->
+        <form id="idioma-form">
+          <!-- Opções que usuário pode escolher -->
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="pt-BR" checked>
+              Português (BR)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="es-ES" checked>
+              Espanhol (ES)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="en-US" checked>
+              Inglês (US)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="fr-FR" checked>
+              Francês (FR)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="de-DE" checked>
+              Alemão (DE)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="ja-JP" checked>
+              Japonês (JP)
+            </label>
+          </div>
+          
+          <div class="form-idioma">
+            <label>
+              <input type="radio" name="idioma" value="zh-CN" checked>
+              Chinês (CN)
+            </label>
+          </div>
+          
+          <!-- Botão para confirmar a escolha do idioma -->
+          <button class="btn" type="submit">Alterar</button>
+          
+        </form>
+      </div> <!-- Fim div Flex -->
+    </section>
+  </main>
+  <!-- RODAPE -->
+  <footer>
+    <div class="rodape"></div>
+  </footer>
+  <!-- JAVASCRIPT -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
