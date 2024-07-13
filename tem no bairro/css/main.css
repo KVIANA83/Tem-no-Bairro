@@ -15,6 +15,8 @@ body {
   height: 100vh;
 }
 
+/* Rodapé */
+
 footer {
   background-color: #bfacac;
   padding: 40px;
@@ -73,7 +75,7 @@ header .barra-pesquisa {
   padding: 0;
 }
 
-.sidebar ul li {
+.sidebar ul li a {
   padding: 10px 20px;
   transition: background-color 0.3s ease;
 }
@@ -85,7 +87,7 @@ header .barra-pesquisa {
   font-size: 16px;
 }
 
-.sidebar ul li:hover {
+.sidebar ul li a:hover {
   color: #fff;
   font-weight: 600;
   background-color: #ea5b5b;
@@ -163,3 +165,4 @@ header .barra-pesquisa {
   color: #ea5b5b;
   transform: translateY(-5px);
 }
+
