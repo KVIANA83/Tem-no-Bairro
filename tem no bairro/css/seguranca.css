@@ -1,13 +1,27 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f1f1f1;
   height: 100vh;
 }
+
+/* Rodapé */
 
 footer {
   background-color: #bfacac;
   padding: 40px;
   clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
 }
+
+/* Cabeçalho */
 
 header {
   display: flex;
@@ -32,21 +46,10 @@ input[type="text"] {
   margin-right: 30%;
 }
 
-/*
-header .barra-pesquisa {
-  border-radius: 10px;
-  border: none;
-  padding: 10px;
-  height: 50px;
-  justify-content: center;
-  margin-left: 100px;
-} 
-*/
-
 /* Estilo do menu lateral */
 
 .sidebar {
-  position: fixed; 
+ /* position: fixed;  */
   top: 20px;
   left: 10px;
   width: 170px;
@@ -104,3 +107,80 @@ header .barra-pesquisa {
   font-size: 14px;
 }
 
+/* Estilização da Tag Main */
+main {
+  display: flex;
+  margin-left: 200px;
+  padding: 20px;
+} 
+
+/* Formulário Trocar Senha */
+
+.trocar-senha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alterar-senha-form {
+  font-size: 18px;
+}
+
+.alterar-senha label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.alterar-senha input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+}
+
+button {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #ea5b5b;
+  border-radius: 16px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+/* Mensagem de confirmação */
+
+.confirmation-message {
+  margin-top: 20px;
+  color: #ea5b5b;
+  font-weight: 500;
+}
+
+
+/* Formulário Excluir Conta */
+/* Formulário Feedback */
+/* Formulário Idiomas */
+/* Formulário Política de Privacidade */
+/* Formulário Segurança */
