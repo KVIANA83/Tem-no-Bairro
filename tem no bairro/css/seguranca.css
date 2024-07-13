@@ -108,11 +108,27 @@ input[type="text"] {
 }
 
 /* Estilização da Tag Main */
+
 main {
   display: flex;
   margin-left: 200px;
   padding: 20px;
 } 
+
+/* Título */
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Mensagem de confirmação */
+
+.confirmation-message {
+  margin-top: 20px;
+  color: #ea5b5b;
+  font-weight: 500;
+}
 
 /* Formulário Trocar Senha */
 
@@ -123,25 +139,28 @@ main {
   flex-direction: column; 
   align-items: center; 
   background-color: #fff;
-  box-shadow: 2px 2px 2px 2px #ea5b5b50;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
   border-radius: 10px;
-  width: 300px;
+  width: 400px;
   height: 350px;
   margin: 20px auto;
-  padding: 20px;
-}
-
-.titulo {
-  text-align: center;
-  margin-bottom: 20px;
+  padding: 20px; 
 }
 
 .alterar-senha-form {
-  font-size: 18px;
+  display: flex;
+}
+
+.alterar-senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .alterar-senha label {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
@@ -150,6 +169,9 @@ main {
   border-radius: 5px;
   border: 1px solid #ea5b5b;
 }
+
+
+/* Estilização dos Botões */
 
 button {
   background-color: #f1f1f1;
@@ -170,17 +192,171 @@ button:hover {
   font-weight: 600;
 }
 
-/* Mensagem de confirmação */
 
-.confirmation-message {
-  margin-top: 20px;
-  color: #ea5b5b;
-  font-weight: 500;
+/* Formulário Excluir Conta */
+
+.excluir-conta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 400px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px; 
+}
+
+.excluir-conta-form {
+  display: flex;
+}
+
+.conta-excluir {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.conta-excluir label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.conta-excluir input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 
-/* Formulário Excluir Conta */
 /* Formulário Feedback */
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-feedback label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-feedback textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  resize: none;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 25px;
+  color: #bfacac;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ea5b5b;
+}
+
+.rating label:before {
+  content: '★';
+  font-size: 30px;
+}
+
+
 /* Formulário Idiomas */
+
+.idiomas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.form-idioma {
+  margin-bottom: 10px;
+}
+
+.form-idioma label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-idioma input[type="radio"] {
+  margin-right: 10px;
+}
+
+
 /* Formulário Política de Privacidade */
+
+.politica {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+}
+
+.titulo {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.paragrafo {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #000;
+}
+
+
 /* Formulário Segurança */
