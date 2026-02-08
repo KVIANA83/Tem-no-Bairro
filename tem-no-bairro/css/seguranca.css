@@ -1,0 +1,362 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+/* Rodapé */
+
+footer {
+  background-color: #bfacac;
+  padding: 40px;
+  clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 10px;
+  background-color: #bfacac;
+  height: 60px;
+}
+
+#logo {
+  margin-left: 0;
+  flex-grow: 1;
+}
+
+input[type="text"] {
+  display: flex;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-right: 30%;
+}
+
+/* Estilo do menu lateral */
+
+.sidebar {
+ /* position: fixed;  */
+  top: 20px;
+  left: 10px;
+  width: 170px;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #ea5b5b;
+  border-radius: 10px;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.ativo {
+  display: block;
+}
+
+.submenu ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu ul li {
+  padding: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.submenu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Estilização da Tag Main */
+
+main {
+  display: flex;
+  margin-left: 200px;
+  padding: 20px;
+} 
+
+/* Título */
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Mensagem de confirmação */
+
+.confirmation-message {
+  margin-top: 20px;
+  color: #ea5b5b;
+  font-weight: 500;
+}
+
+/* Formulário Trocar Senha */
+
+.trocar-senha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 400px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px; 
+}
+
+.alterar-senha-form {
+  display: flex;
+}
+
+.alterar-senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.alterar-senha label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.alterar-senha input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+}
+
+
+/* Estilização dos Botões */
+
+button {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #ea5b5b;
+  border-radius: 16px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #ea5b5b;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+
+/* Formulário Excluir Conta */
+
+.excluir-conta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 400px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px; 
+}
+
+.excluir-conta-form {
+  display: flex;
+}
+
+.conta-excluir {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.conta-excluir label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.conta-excluir input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+
+/* Formulário Feedback */
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  border-radius: 10px;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-feedback label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-feedback textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ea5b5b;
+  resize: none;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 25px;
+  color: #bfacac;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ea5b5b;
+}
+
+.rating label:before {
+  content: '★';
+  font-size: 30px;
+}
+
+
+/* Formulário Idiomas */
+
+.idiomas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.form-idioma {
+  margin-bottom: 10px;
+}
+
+.form-idioma label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-idioma input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+/* Formulário Política de Privacidade */
+
+.politica {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #ea5b5b50;
+}
+
+.titulo {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.paragrafo {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #000;
+}
+
+
+/* Formulário Segurança */
