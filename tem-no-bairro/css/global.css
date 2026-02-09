@@ -1,0 +1,250 @@
+/* ================= GOOGLE FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #bfacac;
+  height: 60px;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  border-radius: 10px;
+  border: 1px solid #ea5b5b;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #bfacac;
+  padding: 40px;
+  clip-path: polygon(0 100%, 100% 150%, 100% 0, 50% 150%, 0 0);
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  width: 170px;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #fff;
+  font-weight: 600;
+  background-color: #ea5b5b;
+  border-radius: 10px;
+}
+
+/* submenu */
+.submenu {
+  display: none;
+}
+
+.submenu.ativo {
+  display: block;
+}
+
+.submenu ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu ul li a {
+  font-size: 14px;
+  color: #000;
+}
+
+/* ================= UTILITÁRIOS ================= */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ================= BOTÕES ================= */
+.btn {
+  background-color: #ea5b5b;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  box-shadow: 3px 3px 3px 3px #ea5b5b50;
+}
+
+/* ================= TROCAR PERFIL ================= */
+.trocar-perfil {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 600px;
+}
+
+.escolher-perfil {
+  width: calc(100% - 50px);
+  text-align: center;
+  margin: 10px;
+}
+
+.escolher-perfil a {
+  text-decoration: none;
+  color: #000;
+}
+
+.escolher-perfil a img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.escolher-perfil:hover {
+  box-shadow: 3px 3px 5px 3px #ea5b4b50;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ea5b5b;
+  transform: translateY(-5px);
+}
+
+/* ================= PERFIL ================= */
+.perfil-cliente {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: calc(100% - 250px);
+}
+
+.perfil-cliente .flex {
+  align-items: center;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.foto-perfil {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.foto-perfil img,
+.foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ea5b5b;
+}
+
+/* input file escondido */
+input[type="file"] {
+  display: none;
+}
+
+label[for="imagem"] {
+  background-color: #f1f1f1;
+  color: #000;
+  border: 1px solid #ea5b5b;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+label[for="imagem"]:hover {
+  background-color: #bfacac;
+  color: #fff;
+  border: none;
+}
+
+/* ================= FORM PRODUTO ================= */
+.formulario-produto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px #ea5b5b30;
+  width: 600px;
+}
+
+/* ================= CATEGORIAS ================= */
+.categoria {
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 700px;
+}
+
+.icons {
+  width: calc(20% - 10px);
+  text-align: center;
+  margin: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #000;
+}
+
+.icons a img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.icons:hover {
+  box-shadow: 3px 3px 5px 3px #ea5b4b50;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ea5b5b;
+  transform: translateY(-5px);
+}
