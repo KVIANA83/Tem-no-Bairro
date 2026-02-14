@@ -18,7 +18,7 @@ O projeto nasceu como meu **primeiro contato com o desenvolvimento de sistemas**
 
 ### Escolher Perfil
 <p align="center">
-  <img src="assets/docs/peCaptura de tela 2026-02-14 133057rfil.png" width="700">
+  <img src="assets/docs/peCaptura de tela 2026-02-14 133057.png" width="700">
 </p>
 
 ---
