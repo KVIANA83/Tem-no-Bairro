@@ -18,7 +18,7 @@ O projeto nasceu como meu **primeiro contato com o desenvolvimento de sistemas**
 
 ### Escolher Perfil
 <p align="center">
-  <img src="assets/docs/peCaptura de tela 2026-02-14 133057.png" width="700">
+  <img src="assets/docs/Captura de tela 2026-02-14 133057.png" width="700">
 </p>
 
 ---
@@ -93,4 +93,5 @@ Esse repositório mostra, na prática, minha capacidade de aprender, adaptar e m
 
 * LinkedIn: [https://www.linkedin.com/in/karine-viana-caldas-aa03a2194](https://www.linkedin.com/in/karine-viana-caldas-aa03a2194)
 * GitHub: [https://github.com/KVIANA83](https://github.com/KVIANA83)
+
 
