@@ -13,12 +13,12 @@ O projeto nasceu como meu **primeiro contato com o desenvolvimento de sistemas**
 
 ### Página Inicial
 <p align="center">
-  <img src="assets/docs/home.png" width="700">
+  <img src="assets/docs/Captura de tela 2026-02-14 133016.png" width="700">
 </p>
 
 ### Escolher Perfil
 <p align="center">
-  <img src="assets/docs/perfil.png" width="700">
+  <img src="assets/docs/peCaptura de tela 2026-02-14 133057rfil.png" width="700">
 </p>
 
 ---
